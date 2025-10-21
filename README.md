@@ -80,17 +80,21 @@ Text-to-Speech (TTS): Converts AI’s text response back into voice output.
 LiveKit Integration: Handles real-time audio streaming and bidirectional communication.
 
 📂 Project Structure(JARVIS)
-├── .idea/                # IDE configurations
-├── __pycache__/          # Compiled Python cache
-├── jarviz/               # Main assistant logic and modules
-├── KMS/                  # Knowledge Management or support scripts
-├── venc/                 # Virtual environment
+JARVIS/
+├── .idea/               # IDE configuration files
+├── __pycache__/         # Compiled Python cache
+├── jarviz/              # Main assistant logic and modules
+├── KMS/                 # Knowledge Management / support scripts
+├── venv/                # Virtual environment
 │
-├── .env                  # API keys and environment variables
-├── agent.py              # Core voice assistant logic
-├── prompt.py             # System prompts / AI base instructions
-├── requirements.txt      # Python dependencies
-└── README.md             # Project documentation
+├── .env                 # Environment variables (API keys)
+├── agent.py             # Core voice assistant logic
+├── prompt.py            # System prompts / AI instructions
+├── requirements.txt     # Python dependencies
+└── README.md            # Project documentation
+
+
+
 🧩 Example Output
 You: Hey, what’s the weather like today?
 Assistant: It’s 28°C and sunny in your area. Perfect day for a walk!
