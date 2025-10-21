@@ -79,7 +79,7 @@ Text-to-Speech (TTS): Converts AI’s text response back into voice output.
 
 LiveKit Integration: Handles real-time audio streaming and bidirectional communication.
 
-📂 Project Structure
+📂 Project Structure(JARVIS)
 ├── .idea/                # IDE configurations
 ├── __pycache__/          # Compiled Python cache
 ├── jarviz/               # Main assistant logic and modules
