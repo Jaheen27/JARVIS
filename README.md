@@ -1,85 +1,37 @@
-🗣️ AI Voice Assistant using Python, Google Gemini API & LiveKit
+# 🧠 JARVIS – AI Voice Assistant  
+*(Built with Python, Google Gemini API & LiveKit)*  
 
-A real-time AI Voice Assistant built using Python, Google Gemini API, and LiveKit for seamless two-way audio communication.
-This project demonstrates speech recognition, natural language understanding, and text-to-speech generation integrated into a fully functional prototype.
+**JARVIS** is an intelligent real-time **AI Voice Assistant** that listens, understands, and responds just like a human.  
+Powered by **Google Gemini API** for natural language understanding, **Speech Recognition** for input, and **Text-to-Speech** for responses — all orchestrated through **LiveKit** for real-time communication.  
 
-🚀 Features
+---
 
-🎙️ Real-time voice interaction — Talk naturally with the assistant.
+## 🚀 Features  
 
-🧠 AI-powered responses — Uses Google Gemini API for intelligent conversation handling.
+- 🎤 **Real-time voice interaction** — talk to JARVIS naturally  
+- 🧠 **AI-powered conversations** using Google Gemini API  
+- 🔊 **Speech-to-Text (STT)** and **Text-to-Speech (TTS)** for seamless audio processing  
+- ⚙️ **Modular architecture** — easy to extend and customize  
+- 🌐 **LiveKit integration** for real-time streaming  
 
-🔊 Text-to-Speech (TTS) and Speech-to-Text (STT) support.
+---
 
-🌐 LiveKit Integration — Enables live audio streaming and real-time communication.
+## 🧰 Tech Stack  
 
-🧩 Modular Architecture — Easy to extend or customize.
+| Component | Technology Used |
+|------------|----------------|
+| **Language** | Python |
+| **AI Model** | Google Gemini API |
+| **Audio Communication** | LiveKit |
+| **Speech Recognition (STT)** | SpeechRecognition / Google Speech API |
+| **Text-to-Speech (TTS)** | pyttsx3 / gTTS |
+| **Environment** | `.env` for API key management |
 
-🧰 Tech Stack
-Component	Technology Used
-Programming Language	Python
-AI Model	Google Gemini API
-Real-Time Communication	LiveKit
-Speech Recognition	SpeechRecognition / Google Speech API
-Text-to-Speech	pyttsx3 / gTTS
-Environment	VS Code / Jupyter Notebook
-📦 Installation
-1️⃣ Clone the Repository
-git clone https://github.com/<your-username>/ai-voice-assistant.git
-cd ai-voice-assistant
+---
 
-2️⃣ Create and Activate a Virtual Environment
-python -m venv venv
-# For Windows
-venv\Scripts\activate
-# For macOS/Linux
-source venv/bin/activate
+## 📂 **Project Structure (JARVIS)**  
 
-3️⃣ Install Dependencies
-pip install -r requirements.txt
-
-🔑 API Setup
-
-Google Gemini API
-
-Get your API key from Google AI Studio
-.
-
-Add it to your environment variables or a .env file:
-
-GEMINI_API_KEY=your_api_key_here
-
-
-LiveKit
-
-Create an account on LiveKit
- and obtain your API credentials.
-
-Add them to .env:
-
-LIVEKIT_API_KEY=your_api_key_here
-LIVEKIT_API_SECRET=your_secret_here
-
-▶️ Usage
-
-Run the application:
-
-python main.py
-
-
-Then speak to your AI assistant — it listens, processes, and responds in real time!
-
-🧠 How It Works
-
-Speech-to-Text (STT): Captures audio input and converts it into text.
-
-Natural Language Understanding (NLU): Sends the text to the Google Gemini API for intelligent response generation.
-
-Text-to-Speech (TTS): Converts AI’s text response back into voice output.
-
-LiveKit Integration: Handles real-time audio streaming and bidirectional communication.
-
-📂 Project Structure(JARVIS)
+```bash
 JARVIS/
 ├── .idea/               # IDE configuration files
 ├── __pycache__/         # Compiled Python cache
@@ -91,36 +43,73 @@ JARVIS/
 ├── agent.py             # Core voice assistant logic
 ├── prompt.py            # System prompts / AI instructions
 ├── requirements.txt     # Python dependencies
-└── README.md            # Project documentation 
+└── README.md            # Project documentation
+```
+---
+## ⚙️ Setup & Installation
+1️⃣ Clone the Repository
+```bash
+git clone https://github.com/<your-username>/jarvis-ai-assistant.git
+cd jarvis-ai-assistant
+```
+2️⃣ Create and Activate Virtual Environment
+```bash
+python -m venv venv
+# For Windows
+venv\Scripts\activate
+# For macOS/Linux
+source venv/bin/activate
+```
+3️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+4️⃣ Configure Environment Variables
+Create a .env file in the root directory:
+```
+GEMINI_API_KEY=your_gemini_api_key
+LIVEKIT_API_KEY=your_livekit_api_key
+LIVEKIT_API_SECRET=your_livekit_secret
+```
+▶️ Run the Assistant
+```bash
+python agent.py
+```
+Once launched, JARVIS will start listening and responding to your voice in real time.
+---
+## 🧠 How It Works
+🎙️ Voice Input (STT): Converts your speech to text.
 
+💡 AI Processing: Sends the text to Google Gemini API for understanding and generating a response.
 
-🧩 Example Output
-You: Hey, what’s the weather like today?
-Assistant: It’s 28°C and sunny in your area. Perfect day for a walk!
+🗣️ Voice Output (TTS): Converts the AI’s text reply back into speech.
 
-🤝 Contributing
+🔗 LiveKit: Handles real-time streaming and audio communication.
+---
+## 🧩 Example Output
+```bash
+🧠 JARVIS Online...
 
-Contributions are welcome!
-If you’d like to enhance the assistant, add features, or fix bugs:
+🎙️ You: Hey Jarvis, what’s the weather like today?
+💬 Assistant: It’s 28°C and sunny in your area — perfect day for a walk! 😎
+```
+## 💡 Future Enhancements
+🌍 Multi-language support
 
-Fork the repo
+🧏 Visual avatar or face animation integration
+
+🧩 Plugin system for custom skills
+
+📱 Web or mobile version using React & FastAPI
+
+## 🤝 Contributing
+Contributions are always welcome!
+
+Fork this repository
 
 Create a new branch (feature-new-idea)
 
 Commit your changes
 
-Push and create a Pull Request
+Push and open a Pull Request
 
-📜 License
-
-This project is licensed under the MIT License — feel free to use and modify it.
-
-💡 Future Improvements
-
-🌍 Multi-language support
-
-🧏 Visual avatar integration
-
-📱 Web-based voice interface
-
-🧩 Plugin system for custom commands
