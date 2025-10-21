@@ -78,7 +78,7 @@ Natural Language Understanding (NLU): Sends the text to the Google Gemini API fo
 Text-to-Speech (TTS): Converts AI’s text response back into voice output.
 
 LiveKit Integration: Handles real-time audio streaming and bidirectional communication.
-
+'''
 📂 Project Structure(JARVIS)
 JARVIS/
 ├── .idea/               # IDE configuration files
@@ -93,6 +93,7 @@ JARVIS/
 ├── requirements.txt     # Python dependencies
 └── README.md            # Project documentation
 
+'''
 
 
 🧩 Example Output
